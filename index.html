@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+    <title>Pre Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mt-5">
+            <h1 class="text-success">Dept. of Software Engineering</h1>
+        </div>
+        <form action="POST" autocomplete="on">
+            <fieldset>
+                <legend>Tour (2019) Pre Registration</legend>
+                <label for="name">Name*:</label>
+                <input type="text" id="name" placeholder="Your Name"><br>
+                <label for="phone">Phone*:</label>
+                <input type="tel" id="phone" placeholder="Your Phone Number"><br>
+                <label for="id">ID:</label>
+                <input type="text" id="id" placeholder="Your ID"><br>
+                <label for="dept">Department:</label>
+                <select name="dept" id="dept">
+                <option value="0" selected disabled>Department</option>
+                <option value="1">SWE</option>
+                <option value="2">CSE</option>
+                <option value="3">Others</option>
+            </select>
+                <div class="radio">
+                    <input type="radio" value="student" id="student" name="job" onclick="checkstud()">
+                    <label for="student">Student</label>
+                    <input type="radio" value="teacher" id="teacher" name="job" onclick="checkteac()">
+                    <label for="teacher">Teacher</label>
+                    <input type="radio" value="stuff" id="stuff" name="job" onclick="checkstaf()">
+                    <label for="stuff">Stuff</label>
+                </div>
+                <div id="batchSection">
+                    <label for="batch">Batch</label>
+                    <input type="number" id="batch" min="20" max="30" placeholder="Batch year"><br>
+                </div>
+                <div id="desiSec">
+                    <label for="desi">Designation:</label>
+                    <select name="dept" id="dept">
+                        <option value="0" selected disabled>Designation</option>
+                        <option value="1">Lecturer</option>
+                        <option value="2">Asstt. Prof.</option>
+                        <option value="3">Associate. Prof.</option>
+                        <option value="4">Prof.</option>
+                    </select><br>
+                </div>
+                <div id="paymentSection">
+                    <label for="payment">Payment:</label>
+                    <input type="text" id="payment" value="">
+                </div>
+                <p id="deadline"><b>Last Date 18 Oct, 2019</b></p><br>
+                <input type="checkbox" id="agreement" onclick="checksub()">
+                <label for="agreement">I agree with the <a href="#">terms & condition</a></label>
+                <div id="btn">
+                    <button type="submit" id="subbtn" disabled>Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

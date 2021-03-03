@@ -1,0 +1,70 @@
+* {
+    width: 500px;
+    margin: auto;
+}
+
+.text-success {
+    color: darkgreen;
+}
+
+html {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container form fieldset legend {
+    font-size: 20px;
+    margin: 0px 0px 0px 30px;
+}
+
+.container form fieldset input {
+    margin: 0px 0px 10px 20px;
+    font-size: 15px;
+}
+
+.container form fieldset select {
+    margin: 20px 0px 20px 20px;
+    font-size: 15px;
+}
+
+.container form fieldset .radio input[type="radio"] {
+    margin: 20px 0px 30px 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.container form fieldset .radio label {
+    margin: 0px 10px 0px 10px;
+}
+
+.container form fieldset #batchSection {
+    display: none;
+}
+
+.container form fieldset #desiSec {
+    display: none;
+}
+
+.container form fieldset #deadline {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+
+.container form fieldset input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 20px 10px 0px 80px;
+}
+
+.container form fieldset #btn {
+    margin: 50px 35%;
+}
+
+.container form fieldset #btn button[type="submit"] {
+    width: 150px;
+    background-color: rgb(34, 148, 129);
+    color: white;
+    font-size: 20px;
+}
